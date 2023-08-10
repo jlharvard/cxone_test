@@ -1,5 +1,5 @@
-import numpy as np
-import pandas as pd
+import numpy
+import pandas
 import boto3
 import csv
 import io
