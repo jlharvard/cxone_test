@@ -21,6 +21,7 @@ jobs:
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
           additional_params: --threshold "sast-high=1; sast-medium=1; sca-high=1; sca-medium=1; sast-low=1; sca-low=1"
   sync:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
